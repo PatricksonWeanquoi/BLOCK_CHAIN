@@ -41,7 +41,7 @@ static hash(timestamp, lastHash, data, nonce, difficulty) {
 }
 static blockHash(block) {
 	const { timestamp, lastHash, data, nonce, difficulty } = block;
-  return Block.hash(timestamp, lastHash, data,  none, difficulty);
+  return Block.hash(timestamp, lastHash, data,  nonce, difficulty);
 }
 static adjustDifficulty(lastBlock, currentTime)
 {

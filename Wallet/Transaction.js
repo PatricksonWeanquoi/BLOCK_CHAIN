@@ -43,7 +43,7 @@ class Transaction{
         }
         senderOutput.amount=senderOutput.amount-amount;
         this.outputs.push({amount, address: recipient});
-        Transaction.signTransaction(this.senderWallet);
+        Transaction.signTransaction(this, senderWallet);
         return this;
     }
 
